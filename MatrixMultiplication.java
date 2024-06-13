@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class MatrixMultiplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number of rows for matrix A:");
+        System.out.println("Enter number of rows for matrix A:");
         int rowsA = scanner.nextInt();
-        System.out.println("Enter the number of columns for matrix A:");
+        System.out.println("Enter number of columns for matrix A:");
         int colsA = scanner.nextInt();
         int[][] matrixA = readMatrix(scanner, rowsA, colsA);
-        System.out.println("Enter the number of rows for matrix B:");
+        System.out.println("Enter number of rows for matrix B:");
         int rowsB = scanner.nextInt();
-        System.out.println("Enter the number of columns for matrix B:");
+        System.out.println("Enter number of columns for matrix B:");
         int colsB = scanner.nextInt();
         int[][] matrixB = readMatrix(scanner, rowsB, colsB);
         int[][] matrixC = multiplyMatrices(matrixA, matrixB, rowsA, colsA, colsB);
@@ -19,7 +19,7 @@ public class MatrixMultiplication {
     }
     private static int[][] readMatrix(Scanner scanner, int rows, int cols) {
         int[][] matrix = new int[rows][cols];
-        System.out.println("Enter the elements of the matrix:");
+        System.out.println("Enterelements of the matrix:");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 matrix[i][j] = scanner.nextInt();
